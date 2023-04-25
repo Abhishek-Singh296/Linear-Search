@@ -3,7 +3,7 @@ Linear Search is defined as a sequential search algorithm that starts at one end
 
 --- 
 
-## __ Working__
+## __Working__
 The following steps are followed to search for an element k = 1 in the list below.
 
 ![image](https://user-images.githubusercontent.com/113619312/234359169-f786cca1-c8e1-4856-a107-25932e2d0ffc.png)
@@ -28,3 +28,34 @@ Step 4: If the key matches, return the index. Otherwise, increment i by 1.
 
 ## __Code__
 ```
+#include <stdio.h>
+ 
+int search(int arr[], int N, int x)
+{
+    int i;
+    for (i = 0; i < N; i++)
+        if (arr[i] == x)
+            return i;
+    return -1;
+}
+ 
+// Driver code
+int main(void)
+{
+    int arr[] = { 2, 3, 4, 10, 40 };
+    int x = 10;
+    int N = sizeof(arr) / sizeof(arr[0]);
+ 
+    // Function call
+    int result = search(arr, N, x);
+    (result == -1)
+        ? printf("Element is not present in array")
+        : printf("Element is present at index %d", result);
+    return 0;
+}
+```
+
+## __Output__
+
+
+---
