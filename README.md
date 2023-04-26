@@ -57,5 +57,6 @@ int main(void)
 
 ## __Output__
 
+![Screenshot 2023-04-26 090458](https://user-images.githubusercontent.com/113619312/234465014-2346f5ac-3ef5-4e0e-84ac-d891917d1862.png)
 
 ---
